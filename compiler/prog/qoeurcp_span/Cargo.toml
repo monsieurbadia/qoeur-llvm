@@ -1,0 +1,18 @@
+[package]
+name = "qoeurcp_span"
+version = "0.0.0"
+authors = ["monsieurbadia <iam@monsieurbadia.com>"]
+edition = "2018"
+
+description = """
+the source positions for the qoeur compiler programming
+"""
+
+[lib]
+name = "qoeurcp_span"
+path = "src/lib.rs"
+doctest = false
+
+[dependencies]
+serde = { version = "1.0", features = ["rc"] }
+serde_derive = "1.0"

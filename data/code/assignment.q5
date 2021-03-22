@@ -1,0 +1,7 @@
+fun main = () {
+  val x: int = 3;
+  mut y: int = 8;
+  y = y + x + 10;
+
+  print("{}", y);
+}

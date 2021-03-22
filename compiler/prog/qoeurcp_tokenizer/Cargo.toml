@@ -1,0 +1,23 @@
+[package]
+name = "qoeurcp_tokenizer"
+version = "0.0.0"
+authors = ["monsieurbadia <iam@monsieurbadia.com>"]
+edition = "2018"
+
+description = """
+the parser for the qoeur compiler programming
+"""
+
+[lib]
+name = "qoeurcp_tokenizer"
+path = "src/lib.rs"
+doctest = false
+
+[dependencies]
+qoeurcp_span = { path = "../qoeurcp_span" }
+itertools = "0.10.0"
+mac = "0.0.2"
+serde = { version = "1.0", features = ["rc"] }
+serde_derive = "1.0"
+tendril = "0.4.2"
+unicode-xid = "0.2.1"

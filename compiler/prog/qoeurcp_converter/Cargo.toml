@@ -1,0 +1,24 @@
+[package]
+name = "qoeurcp_converter"
+version = "0.0.0"
+authors = ["monsieurbadia <iam@monsieurbadia.com>"]
+edition = "2018"
+
+description = """
+the code generator for the qoeur compiler programming
+"""
+
+[lib]
+name = "qoeurcp_converter"
+path = "src/lib.rs"
+doctest = false
+
+[dependencies]
+qoeurcp_tokenizer = { path = "../qoeurcp_tokenizer" }
+cranelift = "0.70.0"
+cranelift-jit = "0.70.0"
+cranelift-module = "0.70.0"
+cranelift-object = "0.70.0"
+llvm-sys = "70"
+serde = { version = "1.0", features = ["rc"] }
+serde_derive = "1.0"

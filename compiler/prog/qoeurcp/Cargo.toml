@@ -1,0 +1,19 @@
+[package]
+name = "qoeurcp"
+version = "0.0.0"
+authors = ["monsieurbadia <iam@monsieurbadia.com>"]
+edition = "2018"
+
+description = """
+the qoeur compiler programming
+"""
+
+[lib]
+name = "qoeurcp"
+path = "src/lib.rs"
+doctest = false
+
+# use crates prefixed by `qoeurcp_` only
+[dependencies]
+qoeurcp_converter = { path = "../qoeurcp_converter" }
+qoeurcp_tokenizer = { path = "../qoeurcp_tokenizer" }

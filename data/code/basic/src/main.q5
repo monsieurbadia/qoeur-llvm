@@ -1,0 +1,8 @@
+use @gl::matrix::(add, sub);
+
+fun main = () {
+  let adds = add(10, 3);
+  let subs = sub(10, 3);
+
+  print("hello, world");
+}

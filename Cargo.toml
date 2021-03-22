@@ -1,0 +1,15 @@
+[workspace]
+members = [
+  "src/root",
+  "compiler/prog/qoeurcp",
+]
+
+exclude = [
+  "target/**/*",
+  "Cargo.lock",
+]
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"

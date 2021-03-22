@@ -1,0 +1,27 @@
+# adds two vec2
+pub fun add: vec2 = (out: vec2, a: vec2, b: vec2) {
+  out[0] = a[0] + b[0];
+  out[1] = a[1] + b[1];
+  out
+}
+
+# subtracts two vec2
+pub fun sub: vec2 = (out: vec2, a: vec2, b: vec2) {
+  out[0] = a[0] - b[0];
+  out[1] = a[1] - b[1];
+  out
+}
+
+# multiplies two vec2
+pub fun mul: vec2 = (out: vec2, a: vec2, b: vec2) {
+  out[0] = a[0] * b[0];
+  out[1] = a[1] * b[1];
+  out
+}
+
+# divides two vec2
+pub fun div: vec2 = (out: vec2, a: vec2, b: vec2) {
+  out[0] = a[0] / b[0];
+  out[1] = a[1] / b[1];
+  out
+}

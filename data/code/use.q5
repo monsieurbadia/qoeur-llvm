@@ -1,0 +1,21 @@
+use @std::gl::matrix;
+use @std::math::(sqrt, sin);
+
+fun main = () {
+  matrix::mat4::identity(matrix::world_matrix);
+
+  matrix::mat4::look_at(
+    matrix::view_matrix,
+    [0.0, 0.0, 0.5],
+    [0.0, 0.0, 0.0],
+    [0.0, 0.0, 0.0],
+  );
+
+  matrix::mat4::perspective(
+    matrix::projection_matrix,
+    rad(0.45),
+    800 / 600,
+    0.1,
+    100.0,
+  );
+}

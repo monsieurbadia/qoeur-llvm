@@ -1,0 +1,19 @@
+[package]
+name = "root"
+version = "0.0.0"
+authors = ["monsieurbadia <iam@monsieurbadia.com>"]
+edition = "2018"
+
+[lib]
+name = "root"
+path = "lib.rs"
+doctest = false
+
+[[bin]]
+name = "root"
+path = "bin/main.rs"
+test = false
+
+[dependencies]
+qoeurcp = { path = "../../compiler/prog/qoeurcp" }
+tendril = "0.4.2"
